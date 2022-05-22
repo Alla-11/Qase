@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee30932-578e-42a3-9773-04703f63619c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/adapters/BaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adapters/BaseAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/adapters/ProjectsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adapters/ProjectsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/adapters/SuiteAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adapters/SuiteAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/QaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/QaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/StringConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/StringConstant.java" afterDir="false" />
-    </list>
+    <list default="true" id="eee30932-578e-42a3-9773-04703f63619c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +38,24 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.QaseTest.deleteProjectTest">
+  <component name="RunManager" selected="TestNG.QaseTest.getProjectsTest">
+    <configuration name="QaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Qase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.QaseTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QaseTest.createProjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Qase" />
       <extension name="coverage">
@@ -57,24 +67,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.QaseTest" />
       <option name="METHOD_NAME" value="createProjectTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QaseTest.createSuiteBaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Qase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.QaseTest" />
-      <option name="METHOD_NAME" value="createSuiteBaseTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.QaseTest.getProjectsTest" />
+        <item itemvalue="TestNG.QaseTest" />
         <item itemvalue="TestNG.QaseTest.deleteProjectTest" />
         <item itemvalue="TestNG.QaseTest.createProjectTest" />
         <item itemvalue="TestNG.QaseTest.createSuiteTest" />
-        <item itemvalue="TestNG.QaseTest.createSuiteBaseTest" />
-        <item itemvalue="TestNG.QaseTest.getProjectsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,33 +149,53 @@
       <option name="presentableId" value="Default" />
       <updated>1652719045060</updated>
     </task>
+    <task id="LOCAL-00001" summary="add assert from post requests">
+      <created>1653251170801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653251170801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add assert from post requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add assert from post requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="766" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1653246637959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="766" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1653246637959" />
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653251170236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1653251170236" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1653244130998">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1653244130998" />
-    <state width="1239" height="407" key="GridCell.Tab.0.bottom" timestamp="1653250503169">
+    <state width="1493" height="367" key="GridCell.Tab.0.bottom" timestamp="1653251081886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1239" height="407" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653250503169" />
-    <state width="1239" height="407" key="GridCell.Tab.0.center" timestamp="1653250503168">
+    <state width="1493" height="367" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653251081886" />
+    <state width="1493" height="367" key="GridCell.Tab.0.center" timestamp="1653251081886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1239" height="407" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653250503168" />
-    <state width="1239" height="407" key="GridCell.Tab.0.left" timestamp="1653250503168">
+    <state width="1493" height="367" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653251081886" />
+    <state width="1493" height="367" key="GridCell.Tab.0.left" timestamp="1653251081886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1239" height="407" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653250503168" />
-    <state width="1239" height="407" key="GridCell.Tab.0.right" timestamp="1653250503168">
+    <state width="1493" height="367" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653251081886" />
+    <state width="1493" height="367" key="GridCell.Tab.0.right" timestamp="1653251081886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1239" height="407" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653250503168" />
+    <state width="1493" height="367" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653251081886" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1653251183146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653251183146" />
     <state x="807" y="204" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1653246583071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

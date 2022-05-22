@@ -16,10 +16,7 @@ public class QaseTest {
 
     @Test(description = "get list project")
     public void getProjectsTest() {
-        String projectList = new BaseAdapter().get(PROJECT_API_ENDPOINT);
-        System.out.println("***************");
-        System.out.println(projectList);
-        Assert.assertEquals(projectList,200);
+        new BaseAdapter().get(PROJECT_API_ENDPOINT);
     }
 
     @Test(description = "create new project")
@@ -34,7 +31,7 @@ public class QaseTest {
 
     }
 
-    @Test(description = "delete project")
+    @Test(description = "delete project", dependsOnMethods = "createProjectTest")
     public void deleteProjectTest(){
         final String status = new ProjectsAdapter().urlFromDelete("QA12ONL19");
     }
