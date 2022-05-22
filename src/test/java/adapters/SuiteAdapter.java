@@ -15,5 +15,5 @@ public class SuiteAdapter extends BaseAdapter{
         return post(String.format(SUITE_API_ENDPOINT,projectCode),converter.toJson(suite)).body();
     }
 
-
 }
+
