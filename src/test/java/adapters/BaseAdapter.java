@@ -2,7 +2,6 @@ package adapters;
 
 import com.google.gson.Gson;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.given;
 import static utils.StringConstant.TOKEN_NAME;
 
