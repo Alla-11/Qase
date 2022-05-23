@@ -3,7 +3,6 @@ package tests;
 import adapters.BaseAdapter;
 import adapters.ProjectsAdapter;
 import adapters.SuiteAdapter;
-import lombok.val;
 import models.Project;
 import models.Suite;
 import org.testng.Assert;
@@ -16,14 +15,15 @@ public class QaseTest {
 
     @Test(description = "get list project")
     public void getProjectsTest() {
-        new BaseAdapter().get(PROJECT_API_ENDPOINT);
+        boolean status = new ProjectsAdapter().getTitle(new BaseAdapter().get(PROJECT_API_ENDPOINT)) != null;
+        Assert.assertTrue(status);
     }
 
     @Test(description = "create new project")
     public void createProjectTest(){
         Project project = Project.builder()
-                                 .title("qa12onl19")
-                                 .code("qa12onl19")
+                                 .title("qa12onl20")
+                                 .code("qa12onl20")
                                  .description("Test project 4")
                                  .build();
         boolean status = new ProjectsAdapter().create(project) != null;
@@ -33,7 +33,9 @@ public class QaseTest {
 
     @Test(description = "delete project", dependsOnMethods = "createProjectTest")
     public void deleteProjectTest(){
-        final String status = new ProjectsAdapter().urlFromDelete("QA12ONL19");
+        boolean status = new ProjectsAdapter().getStatus(new ProjectsAdapter().urlFromDelete("QA12ONL20"));
+        Assert.assertTrue(status);
+
     }
 
     @Test (description = "create new suite")

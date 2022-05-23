@@ -1,15 +1,26 @@
 package adapters;
 
-import io.restassured.response.ResponseBody;
+import com.google.gson.Gson;
+import models.ObjectResponse;
 import models.Project;
-import models.Suite;
-
 import static utils.StringConstant.*;
 
 public class ProjectsAdapter extends BaseAdapter{
 
     public String create(Project project){
         return post(PROJECT_API_ENDPOINT,converter.toJson(project)).body().path("result.code");
+    }
+
+    public String getTitle(String body){
+        ObjectResponse project = new Gson().fromJson(body, ObjectResponse.class);
+        String title = project.getResult().getEntities().get(0).getTitle();
+        return title;
+    }
+
+    public Boolean getStatus(String body){
+        ObjectResponse project = new Gson().fromJson(body, ObjectResponse.class);
+        Boolean status = project.getStatus();
+        return status;
     }
 
 
